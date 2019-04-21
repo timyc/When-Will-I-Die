@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="When will I die? is a simple application that estimates when someone will die depending on several factors.">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>When will I die?</title>
+		<!-- Bootstrap stylesheet -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body style = "background-color: #2a2f35;">
+		<nav class="navbar navbar-dark bg-dark">
+			<div class = "container">
+  				<a class="navbar-brand" href="#">
+    				<img src="img/skull.png" width="40" height="40" alt=""> Death Calculator
+  				</a>
+  			</div>
+		</nav>
+		<br />
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<form id = "factors" method = "post">
+						<div class = "form-group">
+    						<label for = "criteria1" class = "text-light">1. Gender</label>
+    						<select class = "form-control" id = "criteria1">
+    							<option value = ""></option>
+      							<option value = "male">Male</option>
+      							<option value = "female">Female</option>
+    						</select>
+    						<label for = "criteria2" class = "text-light">2. Do you smoke?</label>
+    						<select class = "form-control" id = "criteria2">
+    							<option value = ""></option>
+      							<option value = "yes">Yes</option>
+      							<option value = "no">No</option>
+    						</select>
+    						<label for = "criteria3" class = "text-light">3. Do you consume alcohol excessively?</label>
+    						<select class = "form-control" id = "criteria3">
+    							<option value = ""></option>
+      							<option value = "yes">Yes</option>
+      							<option value = "no">No</option>
+    						</select>
+    						<label for = "criteria4" class = "text-light">4. Do you exercise regularly? (At least 150 minutes/week.)</label>
+    						<select class = "form-control" id = "criteria4">
+    							<option value = ""></option>
+      							<option value = "yes">Yes</option>
+      							<option value = "no">No</option>
+    						</select>
+    						<label for = "criteria5" class = "text-light">5. Where do you live? (This calculates quality of life.)</label>
+    						<select class = "form-control" id = "criteria5">
+    							<option value = ""></option>
+      							<option value = "eastasia1">East Asia (excl. China, incl. Macau, Singapore, Hong Kong)</option>
+      							<option value = "eastasia2">Other Asian countries incl. Russia</option>
+      							<option value = "westeurope">Western Europe</option>
+      							<option value = "easteurope">East Europe</option>
+      							<option value = "middleeast">Middle East</option>
+      							<option value = "northamerica">North America</option>
+      							<option value = "centralamerica">Central America incl. Mexico</option>
+      							<option value = "southamerica">South America</option>
+      							<option value = "oceania">Oceania</option>
+      							<option value = "africa1">Africa excl. South Africa</option>
+      							<option value = "africa2">South Africa</option>
+    						</select>
+  						</div>
+  						<input type = "submit" class = "btn btn-success btn-send" id = "calculate" value = "Calculate" />
+  					</form>
+  				</div>
+  				<div class = "col">
+  					<div id = "results" class = "text-light"></div>
+  				</div>
+  			</div>
+		</div>
+		<!-- Bootstrap required scripts -->
+		<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- App required scripts -->
+		<script src= "js/formresponse.js"></script>
+	</body>
+</html>
