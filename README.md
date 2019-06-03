@@ -1,2 +1,2 @@
 # when-will-i-die
-Preview: https://wwid.xen.cx/
+Preview: https://wwid.7im.me/
