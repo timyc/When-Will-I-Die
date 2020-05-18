@@ -1,2 +1,2 @@
 # when-will-i-die
-Preview: https://wwid.7im.me/
+Preview: https://wwid.timyc.io/
